@@ -55,6 +55,8 @@ Get-Command -Module Az.Compute
 Get-Command -Module Az.Compute -Verb New
 Get-Command -Module Az.Compute -Noun AzVM
 
+Get-AzResourceProvider | Select-Object ProviderNamespace,ResourceTypes | Sort-Object ProviderNamespace
+
 Get-AzResourceGroup
 
 Get-AzVM
